@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style>
+			#container {
+				margin: 0 auto;
+				width: 960px;
+
+			}
+
+			#sanze_right {
+				float: right;
+				/**相对定位配合absolute使用，让absolute在其中定位**/
+				position: relative;
+			}
+
+			#sanze_pic {
+				left: 13px;
+				top: 6px;
+				/*绝对定位absolute，单独使用时相对于body定位*/
+				position: absolute;
+			}
+
+			/*ul标签向上靠右浮动，去掉原声的· */
+			ul {
+				list-style-type: none;
+				/**内边距**/
+				padding: 0px;
+				margin: 0px;
+			}
+
+			/*li标签向上靠左浮动*/
+			li {
+				float: left;
+				/**外边距**/
+			}
+
+			a {
+				/*去掉下划线*/
+				text-decoration: none;
+			}
+
+			a:hover {
+				text-decoration: underline;
+			}
+
+			#top1 {
+				-border: 1px blue solid;
+			}
+
+			#top1 ul {
+				height: 30px;
+				background-color: azure;
+				border: 1px aquamarine solid;
+				float: right;
+				margin-top: 20px;
+				
+			}
+
+			#top1 li {
+				line-height: 30px;
+				margin: 0px 10px;
+			}
+
+			#top1 a {
+				/*a标签字体颜色*/
+				color: chocolate;
+			}
+
+			#top2 {
+				height: 35px;
+				width: 960px;
+
+			}
+
+			#top2 ul {
+				height: 35px;
+				background-color: darkorange;
+				
+			}
+
+			#top2 li {
+				line-height: 35px;
+				margin: 0px 15px;
+				
+			}
+
+			#top2 a {
+				color: white;
+			}
+
+			#top3 {
+				margin-top: 10px;
+			}
+
+			#main {
+				margin-top: 10px;
+				border: 2px salmon solid;
+				-height: 370px;
+				width: 956px;
+				
+				
+
+			}
+			#main strong{
+				color: darkred;
+			}
+			#main span{
+				color: hotpink;
+			}
+
+			#main_top {
+				-border: 1px salmon solid;
+				height: 90px;
+			}
+
+			#main_top img {
+				margin-top: 15px;
+				margin-left: -12px;
+			}
+
+			#main_left {
+				-border: 1px salmon solid;
+				width: 570px;
+				float: left;
+				-height: 420px;
+			}
+
+			#main_right {
+				-border: 1px salmon solid;
+				width: 380px;
+				float: left;
+				-height: 420px;
+				padding-top: 5px;
+			}
+
+			#book1 {
+				float: left;
+				position: relative;
+			}
+
+			#no1 {
+				position: absolute;
+				top: -10px;
+				left: 20px;
+			}
+
+			#book1_jieshao {
+				float: left;
+				-border: 1px salmon solid;
+				width: 280px;
+				font-size: 12px;
+				line-height: 25px;
+				padding-top: 10px;
+			}
+
+			#book1_jieshao a {
+				font-size: 15px;
+			}
+
+			
+
+			.book2 {
+				position: relative;
+				float: left;
+				-border: 1px salmon solid;
+				
+			}
+
+			.no2 {
+				position: absolute;
+				top: -10px;
+				left: 2px;
+
+			}
+
+			.book_jieshao {
+				-border: 1px salmon solid;
+				float: left;
+				line-height: 25px;
+				padding-top: 10px;
+				font-size: 12px;
+				width: 260px;
+				padding-top: 1px;
+			}
+			#clar{
+				clear: both;
+				margin-top: 15px;
+				-border: 2px salmon solid;
+				-height: 150px;
+				-width: 150px;
+			}
+			#clar1{
+				clear: both;
+				margin-top: 15px;
+				-border: 2px salmon solid;
+				-height: 150px;
+				-width: 150px;
+			}
+			#foot{
+				font-size: 10px;
+				color: darkgray;
+				text-align: center;
+				-border: 2px salmon solid;
+			}
+		</style>
+	</head>
+	<body>
+		<!--居中-->
+
+		<div id="container">
+			<div id="top1">
+				<img src="img/logo.jpg" />
+				<div id="sanze_right">
+					<img id="sanze_pic" src="img/icon_count.png" />
+					<ul>
+						<li><a href="#">尾品会</a></li>
+						<li><a href="#">当当优品</a></li>
+						<li><a href="#">数字馆</a></li>
+						<li><a href="#">都看阅读</a></li>
+					</ul>
+				</div>
+			</div>
+			<div id="top2">
+				<ul>
+					<li><a href="#">首页</a></li>
+					<li><a href="#">图书</a></li>
+					<li><a href="#">音像</a></li>
+					<li><a href="#">童装</a></li>
+					<li><a href="#">服装</a></li>
+					<li><a href="#">鞋靴</a></li>
+					<li><a href="#">运动</a></li>
+					<li><a href="#">箱包</a></li>
+					<li><a href="#">美妆</a></li>
+					<li><a href="#">珠宝</a></li>
+					<li><a href="#">家居</a></li>
+					<li><a href="#">食品</a></li>
+					<li><a href="#">酒</a></li>
+					<li><a href="#">手机</a></li>
+					<li><a href="#">数码</a></li>
+					<li><a href="#">电脑</a></li>
+					<li><a href="#">家电</a></li>
+				</ul>
+			</div>
+			<div id="top3">
+				<img src="img/banner.png">
+			</div>
+			<div id="main">
+				
+				<div id="main_top">
+					<img src="img/bg_bang.gif" id="changxiao">
+				</div>
+				<div id="main_left">
+					<div id="book1">
+						<img src="img/book-01.jpg" />
+						<img id="no1" src="img/bookNo1.gif" />
+					</div>
+					<div id="book1_jieshao">
+						<div><a href="#">偷影子的人</a></div>
+						<div>作 者：[法] 马克·李维（Marc Levy）著,段韵灵 译</div>
+						<div>出版社：湖南文艺出版社</div>
+						<div>当当价：￥ <strong>19.70</strong></div>
+						<div>不知道姓氏的克蕾儿。这就是你在我生命里的角色，我童年时的小女孩，今日蜕变成了女人，一段青梅竹马的回忆，一个时间之神没有应允的愿望。
+							一个老是受班上同学欺负的瘦弱小男孩，因为拥有一种特殊能力而强大：他能“偷别人的影子”，因而能看见他</div>
+					</div>
+					
+				</div>
+				
+				<div id="main_right">
+					<div class="book2">
+						<img src="img/book-02.jpg" />
+						<img class="no2" src="img/bookNo2.gif" />
+					</div>
+					<div class="book_jieshao">
+						<div><a href="#">看见(央视知名记者、主持人柴静：十年个人成长的告白，中国社会变迁的备忘</a></div>
+						<div>作 者：柴静 著</div>
+						<div>出版社：广西师范大学出版社</div>
+						<div>￥ <strong>29.40</strong> <span>7.4折</span></div>
+					</div>
+					<div id="clar"></div>
+					<div class="book2">
+						<img src="img/book-03.jpg" />
+						<img class="no2" src="img/bookNo3.gif" />
+					</div>
+					<div class="book_jieshao">
+						<div><a href="#">改变孩子先改变自己</a></div>
+						<div>作 者：贾容韬 贾毅 著</div>
+						<div>出版社：作家出版社</div>
+						<div>￥ <strong>22.20</strong> <span>7.4折</span></div>
+					</div>
+				</div>
+				<div id="clar1"></div>
+			</div>
+			<div id="foot">
+					Copyright (C) 当当网 2004-2013, All Rights Reserved<img src="img/validate.gif" style="vertical-align: middle;">京ICP证041189号出版物经营许可证 新出发京批字第直0673号</div>
+			</div>
+		</div>
+	</body>
+</html>
